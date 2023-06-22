@@ -8,6 +8,8 @@ import config
 
 intents = discord.Intents.default()
 intents.guilds = True
+intents.messages = True
+intents.members = True 
 
 class Porygenesis_Bot(commands.Bot):
     async def setup_hook(self):
